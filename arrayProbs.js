@@ -1,5 +1,5 @@
 function reverseArray(arr){
-  // loops through array from end to begining & returns each element
+  // loops through array from end to begining & returns each index value
   for(let i = arr.length -1; i >= 0; i--){
     return arr[i];
   }
@@ -8,7 +8,7 @@ function reverseArray(arr){
 // ***maxReturn()***
 
 function maxReturn(arr){
-  // variable that stores the intial value
+  // variable that stores the intial index value
   let max = arr[0];
   // loops through individual elemtns of arrayProbs
   for(let i = 1; i < arr.length; i++){
@@ -24,7 +24,7 @@ function maxReturn(arr){
 // ***isIdentical()***
 
 function isIdentical(arr){
-  // variable that holds intial value
+  // variable that holds intial index value
   let first = arr[0];
   // loops through indiviual array elemnts from begining
   for(let i = 1; i < arr.length; i++){
@@ -37,13 +37,16 @@ function isIdentical(arr){
 }
 
 
- // forEach version of isIdentical()
-// function isIdentical(arr){
-//   let first = arr[0];
-//   arr.forEach(function(element){
-//     if(element !== first){
-//       return false;
-//     }
-//   });
-//   return true;
-// }
+
+
+// ****sumArray*****
+function sumArray(arr){
+  // variable holding intial index value
+  let total = 0;
+  // loops through array from begining
+  for(let i = 0; i < arr.length; i++){
+    // adds array elements as they itterate
+    total += arr[i];
+  }
+  return total;
+}

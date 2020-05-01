@@ -1,7 +1,8 @@
 function reverseArray(arr){
-  // loops through array from end to begining & returns each index value
+  // loops through array elements starting from the end
   for(let i = arr.length -1; i >= 0; i--){
-    return arr[i];
+    // prints current array element
+    console.log(arr[i])
   }
 }
 
